@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+
+    <title>Voting for favourite Soccer team</title>
+    <link rel="stylesheet" href="lib/bootstrap-4.0.0-dist/css/bootstrap.min.css">
+    <style>
+      .header-flag {
+        width: 100%;
+        height: 800px;
+      }
+
+      .header-title {
+        margin-left: 80px;
+        margin-right: 80px;
+        height: 140px;
+        background: white;
+        margin-top: -80px;
+        text-align: center;
+      }
+
+      .candicate-table {
+        margin-left: 80px;
+        margin-right: 80px;
+        margin-top: 40px;
+      }
+
+      .vertical-align {
+        vertical-align: inherit !important;
+      }
+
+      .noExtension {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 40px;
+        background: orange;
+      }
+
+      .hide{
+        display: none;
+      }
+    </style>
+</head>
+
+<body>
+  <img src="./img/dadda.jpeg"class='header-flag'></img>
+
+  <div class="card header-title">
+    <div class="card-body">
+      <h3 class='mt-4'>Voting for your favourite Soccer team.</h3>
+    </div>
+  </div>
+
+  <div class="candicate-table">
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th scope="col">Name</th>
+          <th scope="col">Description</th>
+          <th scope="col">Votes</th>
+          <th scope="col">#</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">
+            <img alt="Real Madrid.jpg" src="https://upload.wikimedia.org/wikipedia/ru/thumb/9/98/Real_Madrid.png/165px-Real_Madrid.png" width="165" height="231" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>Real Madrid</b>
+          </th>
+          <td class='vertical-align'>Real Madrid Club de Fútbol, commonly known as Real Madrid, or simply as Real, is a professional football club based in Madrid, Spain.
+Founded on 6 March 1902 as the Madrid Football Club, the club has traditionally worn a white home kit since inception. The word real is Spanish for "royal" and was bestowed to the club by King Alfonso XIII in 1920 together with the royal crown in the emblem. The team has played its home matches in the 81,044-capacity Santiago Bernabéu Stadium in downtown Madrid since 1947. Unlike most European sporting entities, Real Madrid's members (socios) have owned and operated the club throughout its history.</td>
+          <td class='vertical-align' id='RealMadrid-vote'>0</td>
+          <td class='vertical-align'><button data-vote="RealMadrid" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="Juventus.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Juventus_FC_2017_logo.png/100px-Juventus_FC_2017_logo.png" width="165" height="231" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>Juventus</b>
+          </th>
+          <td class='vertical-align'>Juventus Football Club S.p.A.  is a professional Italian football club in Turin, Piedmont. Founded in 1897 by a group of Torinese students, the club has worn a black and white striped home kit since 1903 and has played home matches in different grounds around its city, the latest being the 41,507-capacity Allianz Stadium. Nicknamed Vecchia Signora ("the Old Lady"), the club has won 34 official league titles, 13 Coppa Italia titles and seven national Super Cups titles, being the record holder for all these competitions; two Intercontinental Cups, two European Champion Clubs' Cup and UEFA Champions Leagues, one European Cup Winners' Cup, a national record of three UEFA Cups, two UEFA Super Cups and one UEFA Intertoto Cup. Consequently, the side leads the historical Federazione Italiana Giuoco Calcio (FIGC) ranking[8] whilst on the international stage occupies the 4th position in Europe and the eight in the world for most confederation titles won with eleven trophies, having led the UEFA ranking during seven seasons since its inception in 1979, the most for an Italian team and joint second overall..</td>
+          <td class='vertical-align' id='Juventus-vote'>0</td>
+          <td class='vertical-align'><button data-vote="Juventus" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="FC_Barcelona_.jpg" src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/220px-FC_Barcelona_%28crest%29.svg.png" width="220" height="223" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>FC Barcelona_</b>
+          </th>
+          <td class='vertical-align'>I understand the arguments against Shaq being even a top-10 player. He took entire seasons off. He was rarely in shape after he won his first championships. And he poisoned locker rooms. 
+
+With the caveat that I never watched Wilt Chamberlain, however, Shaq was the single most dominant player I've seen. His ability to pulverize the opposition makes him one of the very, very best in my book.</td>
+          <td class='vertical-align' id='Barcelona-vote'>0</td>
+          <td class='vertical-align'><button data-vote="Barcelona" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="Bayern München.jpg" src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg/220px-FC_Bayern_M%C3%BCnchen_logo_%282017%29.svg.png" width="220" height="220" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>Bayern München</b>
+          </th>
+          <td class='vertical-align'>Fußball-Club Bayern München e.V., commonly known as FC Bayern München, FCB, Bayern Munich, or FC Bayern, is a German sports club based in Munich, Bavaria (Bayern). It is best known for its professional football team, which plays in the Bundesliga, the top tier of the German football league system, and is the most successful club in German football history, having won a record 28 national titles and 18 national cups.</td>
+          <td class='vertical-align' id='Bayern-vote'>0</td>
+          <td class='vertical-align'><button data-vote="Bayern" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="Manchester City.jpg" src="https://upload.wikimedia.org/wikipedia/en/thumb/e/eb/Manchester_City_FC_badge.svg/200px-Manchester_City_FC_badge.svg.png" width="200" height="200" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>Manchester City</b>
+          </th>
+          <td class='vertical-align'>Manchester City Football Club is a football club in Manchester, England. Founded in 1880 as St. Mark's (West Gorton), it became Ardwick Association Football Club in 1887 and Manchester City in 1894. The club's home ground is the City of Manchester Stadium in east Manchester, to which it moved in 2003, having played at Maine Road since 1923.
+
+Manchester City first played in the top-tier of the Football League in 1899 and won their first major honour with the FA Cup in 1904. The club's most successful period was from 1968 to 1970, when it won the League Championship, FA Cup, League Cup and European Cup Winners' Cup, under the management team of Joe Mercer and Malcolm Allison. After losing the 1981 FA Cup Final, the club went through a period of decline, culminating in relegation to the third tier of English football for the only time in its history in 1998. Having regained their Premier League status in the early 2000s, Manchester City was purchased in 2008 by Abu Dhabi United Group for £210 million, receiving considerable investment. The club went on to win the Premier League in 2012, 2014 and 2018.</td>
+          <td class='vertical-align' id='ManchesterCity-vote'>0</td>
+          <td class='vertical-align'><button data-vote="ManchesterCity" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+        <tr>
+          <th scope="row">
+            <img alt="Liverpool FC.jpg" src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0c/Liverpool_FC.svg/170px-Liverpool_FC.svg.png" width="170" height="227" class="thumbborder" data-file-width="2250" data-file-height="2850">
+            <br />
+            <b>Liverpool FC</b>
+          </th>
+          <td class='vertical-align'>Liverpool Football Club is a professional football club in Liverpool, England, that competes in the Premier League, the top tier of English football. The club has won 5 European Cups, 3 UEFA Cups, 3 UEFA Super Cups, 18 League titles, 7 FA Cups, 8 League Cups, and 15 FA Community Shields.
+
+Founded in 1892, the club joined the Football League the following year and has played at Anfield since its formation. Liverpool established itself as a major force in English and European football in the 1970s and 1980s when Bill Shankly and Bob Paisley led the club to 11 League titles and seven European trophies. Under the management of Rafael Benítez and captained by Steven Gerrard, Liverpool became European champions for the fifth time in 2005.
+
+Liverpool was the ninth highest-earning football club in the world in 2016–17, with an annual revenue of €424.2 million, and the world's eighth most valuable football club in 2017, valued at $1.492 billion. The club has long-standing rivalries with Manchester United and Everton.</td>
+          <td class='vertical-align' id='Liverpool-vote'>0</td>
+          <td class='vertical-align'><button data-vote="Liverpool" type="button" class="btn btn-primary vote">Vote</button></td>
+        </tr>
+
+      </tbody>
+    </table>    
+  </div>
+
+  <p>More info, please visit <a href='https://www.foxsports.com/nba/gallery/ranking-the-25-greatest-players-in-nba-history-100716' target='_blank'>this page</a></p>
+
+  <div class="noExtension hide" id="noExtension">
+    NOTE: Please install <a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">WebExtensionWallet</a>  to use the application.
+  </div>
+  <script src=lib/jquery-3.3.1.min.js></script>
+  <script src=lib/nebPay.js></script>
+  <script src=lib/bootstrap-4.0.0-dist/js/bootstrap.min.js></script>
+  <script>
+    var NebPay = require("nebpay");     //https://github.com/nebulasio/
+    var nebPay = new NebPay();
+
+    const dappAddress = "n1oFF98AvUvxANjfYUCpVjtqN7qJZivCWfV";
+
+    // 1f72701b410a7f24d754b1245b6884b7c7f1cec3aaa0818c781d37b9e09375cc
+    // if(typeof(webExtensionWallet) === "undefined"){
+    //   $("#noExtension").removeClass("hide")
+    // }
+
+    $('.vote').click(function() {
+      var to = dappAddress;
+      var value = "0";
+      var callFunction = "save";
+      var callArgs = "[\"" + this.dataset.vote + "\"]"; //in the form of ["args"]
+      
+      nebPay.call(to, value, callFunction, callArgs, {    //使用nebpay的call接口去调用合约,
+        listener: function(resp) {console.log("response of vote: " + resp)}
+      });
+    })
+
+
+    $(document).ready(function(){
+      const CANDIDATES = [
+        'RealMadrid', 
+        'Juventus',
+        'Barcelona',
+        'Bayern',
+        'ManchesterCity',
+        'Liverpool'
+      ];
+
+      CANDIDATES.map(candidate => { 
+        
+        var to = dappAddress;
+        var value = "0";
+        var callFunction = "get";
+        var callArgs = "[\"" + candidate + "\"]"; //in the form of ["args"]
+
+        nebPay.simulateCall(to, value, callFunction, callArgs, {    //使用nebpay的simulateCall接口去执行get查询, 模拟执行.不发送交易,不上链
+            listener: function(response) {
+              
+              if(response.result === "null") {
+                return 0;
+              } else {
+                if(response && response.result) {
+                  var {name, vote} = JSON.parse(response.result)
+                  console.log( name + ' : ' + vote );
+                  $('#'+name+'-vote').text(vote)
+                }
+              }
+            }
+        });
+      })
+
+    }) 
+  </script>
+
+</body>
+</html>
